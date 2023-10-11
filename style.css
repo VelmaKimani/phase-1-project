@@ -21,6 +21,7 @@ input[type="text"]{
     border-radius: 10px 10px 10px 10px;
     outline: 0;
     margin-bottom: 40px;
+    background-color: rgb(245, 193, 201);
 }
 input[type="submit"]{
     font-size: 1em;
@@ -43,7 +44,6 @@ input[type="submit"]{
     height: 200px;
     width:400px;
     box-shadow: 0 0 20px 2px #5e5d5da9 ;
-    
 }
 
 #cityName{
@@ -52,8 +52,6 @@ input[type="submit"]{
     left:0;
     font-size: 2.9em;
     width:290px;
-    white-space: nowrap;
-    overflow-x: scroll;
 }
 
 #image{
@@ -73,17 +71,16 @@ input[type="submit"]{
 }
 
 #main{
-    position: absolute;
-    bottom:40px;
+    position: fixed;
+    bottom:60px;
     right:10px;
     font-size: 2em;
-
 }
 
-#discription{
-    position: absolute;
+#description{
+   position: absolute;
     bottom:5px;
-    right:0px;
+    right: 10px;
     font-size: 1.5em;
     border-radius: 0 0 10px 10px;
 }

@@ -5,7 +5,7 @@ const city = document.querySelector("#city");
 const cityName = document.querySelector("#cityName");
 const temp = document.querySelector("#temp");  //
 const main = document.querySelector("#main");
-const discription = document.querySelector("#discription");
+const description = document.querySelector("#description");
 const image = document.querySelector("#image");
 
 input.onsubmit = (e) => {
@@ -26,7 +26,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=78fbb2284
               cityName.innerHTML = data.name;
               temp.innerHTML = `${Math.round(data.main.temp - 273.15)}°C`;
               main.innerHTML = data.weather[0].main;
-              discription.innerHTML = data.weather[0].description;
+              description.innerHTML = data.weather[0].description;
               image.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
             }
 })
