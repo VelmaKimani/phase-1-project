@@ -1,11 +1,15 @@
 body{
-    background: #afaffc;
+  background-image: url('https://hips.hearstapps.com/hmg-prod/images/meadow-in-rocky-mountain-national-park-royalty-free-image-1592402262.jpg');
   margin-top:20px;
 }
 
+#topic{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
 form{
-    background:#ff8080;
-    padding: 5px;
+    padding: 10px;
     width: fit-content;
     margin: 0 auto;
     border-radius: 10px;
@@ -13,16 +17,19 @@ form{
 input[type="text"]{
     font-size: 1em;
     border:0;
-    padding:10px;
-    border-radius: 10px 0 0 10px;
+    padding:20px;
+    border-radius: 10px 10px 10px 10px;
     outline: 0;
+    margin-bottom: 40px;
 }
 input[type="submit"]{
     font-size: 1em;
     border:0;
-    padding:10px;
-    border-radius: 0 10px 10px 0;
+    padding:20px;
+    border-radius: 10px 10px 10px 10px;
     cursor:pointer;
+    margin-left: 60px;
+    background-color: burlywood;
 }
 
 #weatherContainer{
@@ -30,11 +37,11 @@ input[type="submit"]{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    background:rgb(158, 236, 158);
+    background:#afaffc;
     padding: 20px;
     border-radius:15px;
-    height:150px;
-    width:300px;
+    height: 200px;
+    width:400px;
     box-shadow: 0 0 20px 2px #5e5d5da9 ;
     
 }
@@ -53,11 +60,9 @@ input[type="submit"]{
     position: absolute;
     top:10px;
     right:10px;
-    background:#c6ccc1;
     height: 100px;
     border-radius: 50%;
     border: 0.2px dotted black;
-    box-shadow: 0 0 20px 2px #bfd485 ;
 }
 
 #temp{
@@ -79,7 +84,6 @@ input[type="submit"]{
     position: absolute;
     bottom:5px;
     right:0px;
-    font-size: 1.1em;
-    background:rgba(216, 250, 239, 0.555);
+    font-size: 1.5em;
     border-radius: 0 0 10px 10px;
 }
